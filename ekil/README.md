@@ -39,7 +39,7 @@
 
 ## 3. Division Tag, Semantic Tag
 
-### `<div>콘텐츠</div>`
+### `<div>`
 * div=division. 주로 레이아웃을 구성할 때 사용하는 태그.
 * 남용되지 않도록 주의. 아무 의미 없이 막 쓴 걸로 보일 수 있음.
 
