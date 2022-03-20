@@ -48,11 +48,11 @@
 * 모든 페이지를 만들 때 위의 시멘틱 태그들을 다 써야 하는 것은 아님. 필요한 것만 쓰면 됨.
 
 ```html
-<header></header>
-<footer></footer>
-<nav></nav>
-<aside></aside>
-<section></section>
+<header>헤더</header>
+<footer>푸터</footer>
+<nav>네비게이션</nav>
+<aside>어사이드</aside>
+<section>섹션</section>
 ```
 
 
