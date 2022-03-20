@@ -80,9 +80,9 @@
 ```html
 <video controls width="250">
     <source src="/media/cc0-videos/flower.webm"
-            type="video/webm">
+            type="video/webm" />
     <source src="/media/cc0-videos/flower.mp4"
-            type="video/mp4">
+            type="video/mp4" />
     Sorry, your browser doesn't support embedded videos.
 </video>
 ```
@@ -95,7 +95,7 @@
 * video 태그 안에 텍스트를 넣으면, 비디오가 로딩될 수 없는 환경일 때 사용자들에게 그 텍스트를 보여줌. (대체 텍스트) 텍스트 리더를 사용하는 경우, 텍스트 리더가 여기에 적힌 텍스트를 사용자에게 읽어줄 수 있기 때문에, 대체 텍스트를 적어주는 것이 좋음.
 
 * src와 type은 `<video>` 안에 바로 써도 되지만, 따로 `<source />` 태그를 써서 두 속성을 적을 수도 있음.
-* <source />는 여는 태그만 있고 닫는 태그는 없는 셀프클로징 태그.
+* `<source />`는 여는 태그만 있고 닫는 태그는 없는 셀프클로징 태그.
 
 ### `<img />`
 * 이미지를 삽입하기 위한 셀프클로징 태그.
@@ -110,3 +110,29 @@
 * width, height 속성: 이미지의 가로·세로 크기를 지정하는 속성.
 
 * 무료 이미지, 동영상 사이트 추천: unsplash, pixabay.
+
+
+## 5. html 문서의 구조
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+```
+
+html 문서는 위와 같은 구조로 구성됨.
+* `<!DOCTYPE html>`: 이 문서가 html 5 버전을 사용하고 있음을 알려줌. 버전 명시 역할.
+* `<html>`: 이 문서가 html임을 나타내주는 태그. lang 속성을 여기 안에 써줌.
+* `<head>`: 우리가 확인하지 못하는 정보들을 담고 있는 태그. 홈페이지에 대한 설명, 검색 결과에 노출될 키워드 등이 들어감.
+* `<title>`: 해당 웹 페이지의 제목을 씀. `<head>` 안에는 사용자 눈에 보이지 않는 정보들이 들어가지만, `<title>` 속 콘텐츠는 사용자도 볼 수 있음. url 바에 표시됨.
+* `<meta>`: 타이틀 이외에 헤드에 필요한 모든 정보를 담을 때 사용하는 태그. charset 반드시 사용. charset=character set. html 문서의 문자 인코딩을 설정하는 방식. UTF-8은 페이지에 사용하는 이모티콘과 거의 모든 나라의 언어를 지원해 많이 사용하는 인코딩 형식.
+* `<body>`: 눈에 보이는 모든 정보를 담고 있는 태그. `<h1>`, `<p>` 등은 모두 여기에 들어감.
