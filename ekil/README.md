@@ -100,6 +100,11 @@
 ### `<img />`
 * 이미지를 삽입하기 위한 셀프클로징 태그.
 
+```html
+<img src="/media/cc0-images/grapefruit-slice-332-332.jpg"
+     alt="Grapefruit slice atop a pile of other slices" />
+```
+
 * src 속성: 이미지의 소스를 담음.
 * alt 속성: 비디오의 대체 텍스트와 유사. 이미지가 로드되지 않거나 사용자가 이미지를 볼 수 없는 상황일 때 그 이미지를 설명할 텍스트를 쓰기 위한 속성.
 * width, height 속성: 이미지의 가로·세로 크기를 지정하는 속성.
